@@ -1,0 +1,94 @@
+/*------------Base Styles---------*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	margin-bottom: 50px;
+}
+h3{
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 30px;
+    right: 0%;
+    top: 0%;
+    border: 1px solid black;
+    text-align: center;
+}
+p{
+	margin-top: 20px;
+}
+.row{
+	width: 90%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 3em;
+}
+.col3{
+	display: block;
+	position: relative;
+	color: black;
+	background-color : #d2dae2;
+	font-size: 16px;
+}
+.b1{background-color: #ef5777;
+}
+.b2{
+	background-color: #ff3f34;
+	color:white;
+}
+.b3{background-color: #ffdd59;}
+
+/*------------Desktop---------*/
+@media (min-width: 992px){
+.col3{
+	float: left;
+	width: 31%;
+	padding: 2%;
+	margin: 1%;
+	font-size: 16px;
+	border: 1px solid black;
+	}
+}
+
+/*------------Tablet---------*/
+@media(min-width: 768px) and (max-width: 991px){
+.col3{
+	float: left;
+	width: 48%;
+	padding: 2%;
+	margin: 1%;
+	font-size: 20px;
+	border: 1px solid black;
+	}
+	.p1, .p2{
+		width: 48%;
+	}
+	.p3{
+		width: 98%;
+	}
+}
+/*------------Mobile---------*/
+@media(max-width: 767px)
+{
+.col3{
+	float: left;
+	width: 100%;
+	font-size: 20px;
+	padding: 2%;
+	margin: 1%;
+	border: 1px solid black;
+	}
+	.p1, .p2, .p3{
+		width: 98%;
+	}
+p{
+	margin-top: 30px;
+}
+}
+
